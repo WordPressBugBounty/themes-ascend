@@ -4,7 +4,7 @@
  *
  * @author 		WooThemes
  * @package 	WooCommerce/Templates
- * @version     3.5.1
+ * @version     9.5.0
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -65,7 +65,7 @@ if ( $attachment_ids && $product->get_image_id() ) {
 	        $productimgheight = apply_filters('ascend_product_single_image_height', $productimgheight);
 
 	}
-		foreach ( $attachment_ids as $attachment_id ) {
+		foreach ( $attachment_ids as $key => $attachment_id ) {
 			$full_size_image  = wp_get_attachment_image_src( $attachment_id, 'full' );
 			$thumbnail        = wp_get_attachment_image_src( $attachment_id, 'shop_thumbnail' );
 			$image_title      = get_post_field( 'post_excerpt', $attachment_id );
@@ -87,7 +87,7 @@ if ( $attachment_ids && $product->get_image_id() ) {
 				$html .= ascend_get_full_image_output($productimgwidth, $productimgheight, $image_crop, 'attachment-shop_single shop_single wp-post-image', $light_title, $attachment_id, false, false, false, $attributes);
 				$html .= '</a></div>';
 			} else {
-				$html  = wc_get_gallery_image_html( $attachment_id  );
+				$html  = wc_get_gallery_image_html( $attachment_id, false, $key );
 	 		}
 			
 			echo apply_filters( 'woocommerce_single_product_image_thumbnail_html', $html, $attachment_id );
