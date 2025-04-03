@@ -51,6 +51,9 @@ developers of this theme.
 
 = Theme Name: Ascend =
 
+= Version 1.4.17 | 3rd April 2025 =
+* Update: WC Templates
+
 = Version 1.4.16 | 18th December 2024 =
 * Update: WC Templates
 

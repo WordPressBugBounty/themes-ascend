@@ -55,7 +55,7 @@ function ascend_setup() {
 	// Indicate widget sidebars can use selective refresh in the Customizer.
 	add_theme_support( 'customize-selective-refresh-widgets' );
 
-	define( 'ASCEND_VERSION', '1.4.16' );
+	define( 'ASCEND_VERSION', '1.4.17' );
 	// Square.
 	add_image_size( 'ascend-600x600', 600, 600, true );
 	// portrait.
