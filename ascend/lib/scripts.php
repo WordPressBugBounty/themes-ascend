@@ -77,14 +77,15 @@ add_action( 'wp_head', 'ascend_lightbox_text' );
 
 /**
  * Add Respond.js for IE8 support of media queries
+ * Note: IE conditional comments are deprecated in WordPress 6.9.0+ but kept for backward compatibility
  */
 function ascend_ie_support_scripts() {
 	wp_enqueue_script( 'ascend-html5shiv', get_template_directory_uri() . '/assets/js/vendor/html5shiv.min.js', array(), ASCEND_VERSION, false );
-	wp_script_add_data( 'ascend-html5shiv', 'conditional', 'lt IE 9' );
+	// IE conditional comments deprecated in WordPress 6.9.0+ - removed for compatibility
 	wp_enqueue_script( 'ascend-respond', get_template_directory_uri() . '/assets/js/vendor/respond.min.js', array(), ASCEND_VERSION, false );
-	wp_script_add_data( 'ascend-respond', 'conditional', 'lt IE 9' );
+	// IE conditional comments deprecated in WordPress 6.9.0+ - removed for compatibility
 
 	wp_enqueue_style( 'ascend_ie_fallback', get_template_directory_uri() . '/assets/css/ie_fallback.css', false, ASCEND_VERSION );
-	wp_style_add_data( 'ascend_ie_fallback', 'conditional', 'lt IE' );
+	// IE conditional comments deprecated in WordPress 6.9.0+ - removed for compatibility
 }
 add_action( 'wp_enqueue_scripts', 'ascend_ie_support_scripts' );

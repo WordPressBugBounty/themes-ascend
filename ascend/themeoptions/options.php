@@ -1,7 +1,6 @@
 <?php
 	define( 'ASCEND_OPTIONS_PATH', get_template_directory_uri() . '/themeoptions/options/' );
 
-
 	/*
 	--- BEGIN Config ----
 	*/
@@ -10,21 +9,23 @@
         return;
     }
 
-    // This is your option name where all the Redux data is stored.
-    $opt_name = "ascend";
+	// Wrap Redux initialization in a function that runs on init to ensure translations are loaded
+	function ascend_init_redux_options() {
+		// This is your option name where all the Redux data is stored.
+		$opt_name = "ascend";
 
-    // If Redux is running as a plugin, this will remove the demo notice and links
-    add_action( 'redux/loaded', 'ascend_remove_demo' );
+		// If Redux is running as a plugin, this will remove the demo notice and links
+		add_action( 'redux/loaded', 'ascend_remove_demo' );
 
-    $theme = wp_get_theme();
-    $args = array(
-        'opt_name'             => $opt_name,
-        'display_name'         => $theme->get( 'Name' ),
-        'display_version'      => $theme->get( 'Version' ),
-        'menu_type'            => 'submenu',
-        'allow_sub_menu'       => false,
-        'menu_title'           => __('Theme Options', 'ascend'),
-        'page_title'           => __('Theme Options', 'ascend'),
+		$theme = wp_get_theme();
+		$args = array(
+			'opt_name'             => $opt_name,
+			'display_name'         => $theme->get( 'Name' ),
+			'display_version'      => $theme->get( 'Version' ),
+			'menu_type'            => 'submenu',
+			'allow_sub_menu'       => false,
+			'menu_title'           => __('Theme Options', 'ascend'),
+			'page_title'           => __('Theme Options', 'ascend'),
         'google_api_key'       => 'AIzaSyALkgUvb8LFAmrsczX56ZGJx-PPPpwMid0',
         'google_update_weekly' => false,
         'async_typography'     => false,
@@ -4150,7 +4151,9 @@ Redux::setSection( $opt_name, array(
 	        ),
 	    ),
 	) );
-
+	}
+	// Hook Redux initialization to init to ensure translations are loaded first
+	add_action( 'init', 'ascend_init_redux_options', 10 );
 
 function ascend_override_redux_css() {
   	wp_dequeue_style( 'redux-admin-css' );

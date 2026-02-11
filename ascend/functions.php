@@ -10,11 +10,13 @@ define( 'ASCEND_LANGUAGE_SLUG', 'ascend' );
 
 /**
  * Language setup
+ * Load translations on init for WordPress 6.7.0+ compatibility
  */
 function ascend_lang_setup() {
 	load_theme_textdomain( 'ascend', get_template_directory() . '/languages' );
 }
-add_action( 'after_setup_theme', 'ascend_lang_setup' );
+// Load translations on init (priority 1) before Redux options initialization (priority 10)
+add_action( 'init', 'ascend_lang_setup', 1 );
 
 /**
  * Init Theme Options
