@@ -15,7 +15,7 @@ define( 'ASCEND_LANGUAGE_SLUG', 'ascend' );
 function ascend_lang_setup() {
 	load_theme_textdomain( 'ascend', get_template_directory() . '/languages' );
 }
-// Load translations on init (priority 1) before Redux options initialization (priority 10)
+// Load translations on init (priority 1) before Redux options initialization (priority 2)
 add_action( 'init', 'ascend_lang_setup', 1 );
 
 /**

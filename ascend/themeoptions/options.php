@@ -4153,7 +4153,7 @@ Redux::setSection( $opt_name, array(
 	) );
 	}
 	// Hook Redux initialization to init to ensure translations are loaded first
-	add_action( 'init', 'ascend_init_redux_options', 10 );
+	add_action( 'init', 'ascend_init_redux_options', 2 );
 
 function ascend_override_redux_css() {
   	wp_dequeue_style( 'redux-admin-css' );

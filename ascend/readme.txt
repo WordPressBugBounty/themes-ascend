@@ -4,7 +4,7 @@ Tags: two-columns, one-column, custom-colors, custom-logo, editor-style, custom-
 Requires at least: 5.2
 Tested up to: 6.9.1
 Requires PHP: 5.6
-Stable tag: 1.4.18
+Stable tag: 1.4.19
 License: GNU General Public License v3.0 (or later)
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -51,6 +51,9 @@ developers of this theme.
 -------------------------------------------------------
 
 = Theme Name: Ascend =
+
+= Version 1.4.19 | 12th February 2026 =
+* Fix: Missing settings
 
 = Version 1.4.18 | 11th February 2026 =
 * Fix: WP 6.7 translation error
