@@ -4,7 +4,7 @@ Tags: two-columns, one-column, custom-colors, custom-logo, editor-style, custom-
 Requires at least: 5.2
 Tested up to: 6.9.1
 Requires PHP: 5.6
-Stable tag: 1.4.19
+Stable tag: 1.4.20
 License: GNU General Public License v3.0 (or later)
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -51,6 +51,9 @@ developers of this theme.
 -------------------------------------------------------
 
 = Theme Name: Ascend =
+
+= Version 1.4.20 | 25th March 2026 =
+* Fix: Toolkit Theme Options Missing Under Appearance
 
 = Version 1.4.19 | 12th February 2026 =
 * Fix: Missing settings

@@ -21,9 +21,14 @@ add_action( 'init', 'ascend_lang_setup', 1 );
 /**
  * Init Theme Options
  */
-require_once trailingslashit( get_template_directory() ) . 'themeoptions/redux/framework.php';                  // Options framework.
-require_once trailingslashit( get_template_directory() ) . 'themeoptions/options.php';                          // Options settings.
-require_once trailingslashit( get_template_directory() ) . 'themeoptions/options/ascend_extension.php';         // Options framework extension.
+function ascend_init_redux_options() {
+	require_once trailingslashit( get_template_directory() ) . 'themeoptions/redux/framework.php';                  // Options framework.
+	require_once trailingslashit( get_template_directory() ) . 'themeoptions/options.php';                          // Options settings.
+	require_once trailingslashit( get_template_directory() ) . 'themeoptions/options/ascend_extension.php';         // Options framework extension.
+}
+
+// Wrap Redux initialization in a function that runs on init to ensure translations are loaded
+add_action( 'init', 'ascend_init_redux_options', 2 );
 
 /*
  * Init Theme Startup/Core utilities/classes
