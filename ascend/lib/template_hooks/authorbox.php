@@ -19,7 +19,7 @@ if(!function_exists('ascend_author_box')) {
               </div>
     		<h5 class="author-name"><?php the_author_posts_link(); ?></h5>
             <?php if ( get_the_author_meta( 'occupation' ) ) { ?>
-            <p class="author-occupation"><strong><?php the_author_meta( 'occupation' ); ?></strong></p>
+            <p class="author-occupation"><strong><?php echo esc_html( get_the_author_meta( 'occupation' ) ); ?></strong></p>
             <?php } ?>
     		<p class="author-description author-bio">
     			<?php the_author_meta( 'description' ); ?>
@@ -29,7 +29,7 @@ if(!function_exists('ascend_author_box')) {
                         <a href="<?php echo esc_url(get_the_author_meta( 'facebook' )); ?>" class="facebook_link" target="_blank" title="<?php echo esc_attr(__('Follow', 'ascend').' '.get_the_author_meta( 'display_name' ).' '.__('on Facebook', 'ascend'));?>"><i class="kt-icon-facebook"></i></a>
                 <?php } 
                 if ( get_the_author_meta( 'twitter' ) ) { ?>
-                        <a href="https://twitter.com/<?php esc_attr(the_author_meta( 'twitter' )); ?>" class="twitter_link target="_blank" title="<?php echo esc_attr(__('Follow', 'ascend').' '.get_the_author_meta( 'display_name' ).' '.__('on Twitter', 'ascend'));?>"><i class="kt-icon-twitter"></i></a>
+                        <a href="<?php echo esc_url( 'https://twitter.com/' . get_the_author_meta( 'twitter' ) ); ?>" class="twitter_link" target="_blank" title="<?php echo esc_attr(__('Follow', 'ascend').' '.get_the_author_meta( 'display_name' ).' '.__('on Twitter', 'ascend'));?>"><i class="kt-icon-twitter"></i></a>
                 <?php } 
                 if ( get_the_author_meta( 'google' ) ) { ?>
                         <a href="<?php echo esc_url(get_the_author_meta( 'google' )); ?>" class="googleplus_link" target="_blank" title="<?php echo esc_attr(__('Follow', 'ascend').' '.get_the_author_meta( 'display_name' ).' '.__('on Google Plus', 'ascend'));?>"><i class="kt-icon-google-plus"></i></a>

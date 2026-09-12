@@ -99,7 +99,7 @@
             }
 
             /**
-             * initWpFilesystem - Initialized the Wordpress filesystem, if it already isn't.
+             * initWpFilesystem - Initialized the WordPress filesystem, if it already isn't.
              *
              * @since       3.2.3
              * @access      public
@@ -108,7 +108,7 @@
             public static function initWpFilesystem() {
                 global $wp_filesystem;
 
-                // Initialize the Wordpress filesystem, no more using file_put_contents function
+                // Initialize the WordPress filesystem, no more using file_put_contents function
                 if ( empty( $wp_filesystem ) ) {
                     require_once ABSPATH . '/wp-includes/pluggable.php';
                     require_once ABSPATH . '/wp-admin/includes/file.php';

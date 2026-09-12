@@ -2,9 +2,9 @@
 Contributors: britner
 Tags: two-columns, one-column, custom-colors, custom-logo, editor-style, custom-menu, featured-images, custom-background, threaded-comments, translation-ready, theme-options, e-commerce, rtl-language-support, post-formats, footer-widgets, grid-layout, right-sidebar, left-sidebar.
 Requires at least: 5.2
-Tested up to: 6.9.1
+Tested up to: 7.1
 Requires PHP: 5.6
-Stable tag: 1.4.20
+Stable tag: 1.4.21
 License: GNU General Public License v3.0 (or later)
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -51,6 +51,10 @@ developers of this theme.
 -------------------------------------------------------
 
 = Theme Name: Ascend =
+
+= Version 1.4.21 | 9th September 2026 =
+* Fix: Improved data sanitization and output escaping.
+* Update: Improved translations, theme headers and image sizes.
 
 = Version 1.4.20 | 25th March 2026 =
 * Fix: Toolkit Theme Options Missing Under Appearance

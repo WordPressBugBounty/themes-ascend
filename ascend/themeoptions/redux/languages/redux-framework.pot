@@ -880,7 +880,7 @@ msgid "WP Content URL"
 msgstr ""
 
 #: ReduxCore/inc/welcome/views/status_report.php:96
-msgid "The location of Wordpress's content URL."
+msgid "The location of WordPress's content URL."
 msgstr ""
 
 #: ReduxCore/inc/welcome/views/status_report.php:102
@@ -905,7 +905,7 @@ msgstr ""
 
 #: ReduxCore/inc/welcome/views/status_report.php:117
 msgid ""
-"The current permalink structure as defined in Wordpress "
+"The current permalink structure as defined in WordPress "
 "Settings->Permalinks."
 msgstr ""
 
@@ -914,7 +914,7 @@ msgid "Front Page Display"
 msgstr ""
 
 #: ReduxCore/inc/welcome/views/status_report.php:123
-msgid "The current Reading mode of Wordpress."
+msgid "The current Reading mode of WordPress."
 msgstr ""
 
 #: ReduxCore/inc/welcome/views/status_report.php:131
@@ -952,7 +952,7 @@ msgid "Database Table Prefix"
 msgstr ""
 
 #: ReduxCore/inc/welcome/views/status_report.php:159
-msgid "The prefix structure of the current Wordpress database."
+msgid "The prefix structure of the current WordPress database."
 msgstr ""
 
 #: ReduxCore/inc/welcome/views/status_report.php:163
@@ -1376,7 +1376,7 @@ msgstr ""
 
 #: ReduxCore/inc/welcome/views/support.php:74
 msgid ""
-"Listed below are the Wordpress plugins and/or theme installed on your site "
+"Listed below are the WordPress plugins and/or theme installed on your site "
 "that utilize Redux Framework. We do not directly support products created "
 "with our framework.  It is the responsibility of the plugin or theme "
 "developer to support their work. You will need to contact the author(s) of "

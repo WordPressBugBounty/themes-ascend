@@ -79,7 +79,7 @@
 
                                 // Check if we are on admin.php.  If we are, we have
                                 // to get the current page slug and tab, so we can
-                                // feed it back to Wordpress.  Why>  admin.php cannot
+                                // feed it back to WordPress.  Why>  admin.php cannot
                                 // be accessed without the page parameter.  We add the
                                 // tab to return the user to the last panel they were
                                 // on.

@@ -836,7 +836,7 @@
             // get_options()
 
             /**
-             * ->get_wordpress_date() - Get Wordpress specific data from the DB and return in a usable array
+             * ->get_wordpress_date() - Get WordPress specific data from the DB and return in a usable array
              *
              * @since ReduxFramework 3.0.0
              */
@@ -875,7 +875,7 @@
                 if ( empty ( $data ) && ! empty ( $type ) ) {
 
                     /**
-                     * Use data from Wordpress to populate options array
+                     * Use data from WordPress to populate options array
                      * */
                     if ( ! empty ( $type ) && empty ( $data ) ) {
                         if ( empty ( $args ) ) {
@@ -1261,7 +1261,7 @@
             }
 
             /**
-             * Class Add Sub Menu Function, creates options submenu in Wordpress admin area.
+             * Class Add Sub Menu Function, creates options submenu in WordPress admin area.
              *
              * @since       3.1.9
              * @access      private
