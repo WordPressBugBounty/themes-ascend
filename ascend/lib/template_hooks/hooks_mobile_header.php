@@ -126,7 +126,7 @@ function ascend_mobile_menu_ouput($side = 'right') {
    	<?php  endif; 
 }
 function ascend_mobile_header_cart($side = 'right') {
-	if (class_exists('woocommerce'))  { ?>
+	if ( class_exists( 'woocommerce' ) && WC()->cart ) { ?>
       	<div class="kad-mobile-cart-flex-item kad-mobile-header-height kt-mobile-header-toggle kad-mobile-cart-<?php echo esc_attr($side);?>">
              	<button class="kt-woo-cart-toggle kt-sldr-pop-modal" rel="nofollow" data-mfp-src="#kt-mobile-cart" data-pop-sldr-direction="<?php echo esc_attr($side);?>"  data-pop-sldr-class="sldr-cart-animi">
 					<span class="kt-extras-label"><i class="kt-icon-shopping-bag"></i><span class="kt-cart-total"><?php echo esc_html(WC()->cart->get_cart_contents_count()); ?></span></span>

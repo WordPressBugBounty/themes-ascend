@@ -82,7 +82,7 @@ function ascend_mobile_menu_sldr() {
 }
 add_action( 'wp_footer', 'ascend_mobile_cart_sldr', 30 );
 function ascend_mobile_cart_sldr() { 
-	if ( class_exists( 'woocommerce' ) )  { 
+	if ( class_exists( 'woocommerce' ) && WC()->cart ) { 
 		$ascend = ascend_get_options();  
 		if(isset($ascend['mobile_header_cart']) && ($ascend['mobile_header_cart'] == 'right' || $ascend['mobile_header_cart'] == 'left'))  {?>
     		<div class="mag-pop-sldr mfp-hide mfp-with-anim kt-mobile-cart" id="kt-mobile-cart" tabindex="-1" role="dialog" aria-hidden="true">

@@ -57,6 +57,9 @@ function ascend_woocommerce_support() {
 		 * @param array $fragments the cart frag.
 		 */
 		function ascend_get_refreshed_fragments( $fragments ) {
+			if ( ! WC()->cart ) {
+				return $fragments;
+			}
 			// Get mini cart.
 			ob_start();
 
@@ -83,6 +86,9 @@ function ascend_woocommerce_support() {
 		 * @param object $fragments the cart object.
 		 */
 		function ascend_get_refreshed_fragments_number( $fragments ) {
+			if ( ! WC()->cart ) {
+				return $fragments;
+			}
 			// Get mini cart.
 			ob_start();
 

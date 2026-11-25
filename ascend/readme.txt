@@ -4,7 +4,7 @@ Tags: two-columns, one-column, custom-colors, custom-logo, editor-style, custom-
 Requires at least: 5.2
 Tested up to: 7.1
 Requires PHP: 5.6
-Stable tag: 1.4.21
+Stable tag: 1.4.22
 License: GNU General Public License v3.0 (or later)
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -51,6 +51,9 @@ developers of this theme.
 -------------------------------------------------------
 
 = Theme Name: Ascend =
+
+= Version 1.4.22 | 24th November 2026 =
+* Fix: Prevented a fatal error in the header, topbar and mobile cart when the WooCommerce cart is unavailable.
 
 = Version 1.4.21 | 9th September 2026 =
 * Fix: Improved data sanitization and output escaping.

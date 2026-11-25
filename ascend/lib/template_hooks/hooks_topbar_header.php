@@ -57,7 +57,7 @@ function ascend_topbar_menu($side = 'left') {
    	<?php  endif; 
 }
 function ascend_topbar_cart($side = 'right') {
-	if (class_exists('woocommerce'))  { 
+	if ( class_exists( 'woocommerce' ) && WC()->cart ) { 
 		$ascend = ascend_get_options(); ?>
       	<div class="kad-topbar-flex-item kad-topbar-cart kt-header-extras kad-topbar-item-<?php echo esc_attr($side);?>">
 	      	<ul class="sf-menu sf-menu-normal">

@@ -240,7 +240,7 @@ function ascend_header_extras($class = 'sf-menu-normal', $side = null) {
 					break;
 					case 'cart':
 						if($value == '1') { 
-							if (class_exists('woocommerce'))  {  ?>
+							if ( class_exists( 'woocommerce' ) && WC()->cart ) {  ?>
 						        	<li class="menu-cart-icon-kt sf-dropdown">
 						        		<a class="menu-cart-btn" href="<?php echo esc_url( wc_get_cart_url() ); ?>">
 						          			<span class="kt-extras-label">
